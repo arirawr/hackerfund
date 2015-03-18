@@ -1,0 +1,200 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+$yellow: #FFD600;
+$lime: #78BE20;
+$aqua: #3CDBC0;
+$blue: #2DB5E5;
+$orange: #F37920;
+$white: #fff;
+$light: #eee;
+$med: #999;
+$meddark: #444;
+$dark: #222;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Lato;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	height: 130px;
+	border-bottom: 5px solid $aqua;
+	width: 100%;
+	line-height: 130px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: $white;
+	position: fixed;
+	padding: 0 40px;
+}
+
+/*griddzzzzz*/
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/*buttons and shit*/
+
+#donate {
+	float: right;
+	line-height: 20px;
+	background-color: $lime;
+	height: 60px;
+	padding: 20px;
+	margin-top: 30px;
+	width: 170px;
+	text-align: center;
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($lime, 3%);
+	}
+}
+
+.btn-primary {
+	background-color: $lime;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($lime, 3%);
+	}
+}
+
+/*texts*/
+
+h1 {
+	float: left;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+.highlight {
+	font-size: 8vw;
+	text-align: center;
+
+	@media screen and (min-width: 700px) {
+		font-size: 4vw;
+	}
+}
+
+/*custom elements*/
+
+#logo {
+	float: left;
+	margin-top: 20px;
+	height: 80px;
+}
+
+.infobox {
+	background-color: #eee;
+	text-align: center;
+	color: $med;
+	padding: 20px 30px;
+	width: 33.3%;
+	margin: 10px 0;
+	cursor: pointer;
+
+	* {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&:hover {
+		background-color: darken($light, 3%);
+	}
+}
+
+.overlay-cont {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px 30px;
+	height: 200px;
+	width: 300px;
+}
+
+/*colour accents*/
+
+.hacker {
+	border-top: 10px solid $yellow;
+}
+
+.mentor {
+	border-top: 10px solid $orange;
+}
+
+.sponsor {
+	border-top: 10px solid $blue;
+}
+
+.white-section {
+	height: 500px;
+	background-color: $white;
+}
+
+.grey-section {
+	height: 500px;
+	background-color: $light;
+	padding: 50px;
+}
+
+.aqua-section {
+	height: 500px;
+	background-color: $aqua;
+	color: $white;
+	margin: 50px 0;
+	padding: 50px;
+}
+
+.lime-section {
+	height: 500px;
+	background-color: $lime;
+	margin: 50px 0;
+	padding: 50px;
+}
+
+.yellow-section {
+	height: 500px;
+	background-color: $yellow;
+	margin: 50px 0;
+	padding: 50px;
+}
+
+.orange-section {
+	height: 500px;
+	background-color: $orange;
+	margin: 50px 0;
+	padding: 50px;
+}
+
+.blue-section {
+	height: 500px;
+	background-color: $blue;
+	margin: 50px 0;
+	padding: 50px;
+}
