@@ -11,7 +11,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 5% 15%; }
 
 header {
   height: 130px;
@@ -46,6 +47,9 @@ header {
   cursor: pointer; }
   #donate:hover {
     background-color: #70b11e; }
+  @media screen and (max-width: 700px) {
+    #donate {
+      display: none; } }
 
 .btn-primary {
   background-color: #78BE20;
@@ -66,7 +70,11 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 3vw; }
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 5vw; } }
 
 .highlight {
   font-size: 8vw;
@@ -117,38 +125,26 @@ h1 {
 
 .grey-section {
   height: 500px;
-  background-color: #eee;
-  padding: 50px; }
+  background-color: #eee; }
 
 .aqua-section {
-  height: 500px;
   background-color: #3CDBC0;
-  color: #fff;
-  margin: 50px 0;
-  padding: 50px; }
+  color: #fff; }
 
 .lime-section {
   height: 500px;
-  background-color: #78BE20;
-  margin: 50px 0;
-  padding: 50px; }
+  background-color: #78BE20; }
 
 .yellow-section {
   height: 500px;
-  background-color: #FFD600;
-  margin: 50px 0;
-  padding: 50px; }
+  background-color: #FFD600; }
 
 .orange-section {
   height: 500px;
-  background-color: #F37920;
-  margin: 50px 0;
-  padding: 50px; }
+  background-color: #F37920; }
 
 .blue-section {
   height: 500px;
-  background-color: #2DB5E5;
-  margin: 50px 0;
-  padding: 50px; }
+  background-color: #2DB5E5; }
 
 /*# sourceMappingURL=style.css.map */
