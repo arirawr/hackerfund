@@ -7,6 +7,7 @@ $blue: #2DB5E5;
 $orange: #F37920;
 $white: #fff;
 $light: #eee;
+$lightmed: #ccc;
 $med: #999;
 $meddark: #444;
 $dark: #222;
@@ -24,10 +25,31 @@ body {
 
 section {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 5% 15%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	//padding: 5% 15%;
+	padding: 0;
+
+	.tab {
+		//background-color: $dark;
+		padding: 3%;
+
+		.tab-title {
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+
+	.content {
+		background-color: $light;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 3%;
+		border-bottom: 1px $lightmed solid;
+	}
 }
 
 header {
@@ -191,30 +213,30 @@ h1 {
 
 .aqua-section {
 	background-color: $aqua;
-	color: $white;
+	color: $dark;
 }
 
 .lime-section {
-	height: 500px;
 	background-color: $lime;
 }
 
 .yellow-section {
-	height: 500px;
 	background-color: $yellow;
+	color: white;
 }
 
 .orange-section {
-	height: 500px;
 	background-color: $orange;
 }
 
 .blue-section {
-	height: 500px;
 	background-color: $blue;
 }
 
 .dark-section {
-	height: 500px;
 	background-color: $dark;
+}
+
+.light-section {
+	background-color: $light;
 }
