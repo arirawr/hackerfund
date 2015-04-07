@@ -15,10 +15,29 @@ section {
   align-items: stretch;
   padding: 0; }
   section .tab {
-    padding: 3%; }
+    width: 80px;
+    padding: 3% 0;
+    transition: width 1000ms; }
     section .tab .tab-title {
       text-transform: uppercase;
-      font-weight: 700; }
+      font-weight: 700;
+      transform: rotate(-90deg); }
+  section .block {
+    width: 0;
+    transition: width 1000ms;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section .block img {
+      width: 15vw; }
+  section .auto-width {
+    width: 40%; }
+  section .zero-width {
+    width: 0;
+    padding: 0; }
+    section .zero-width * {
+      display: none; }
   section .content {
     background-color: #eee;
     display: flex;
@@ -26,7 +45,9 @@ section {
     justify-content: center;
     align-items: center;
     padding: 3%;
-    border-bottom: 1px #ccc solid; }
+    border-bottom: 1px #ccc solid;
+    flex: 2 1 auto;
+    text-align: center; }
 
 header {
   height: 60px;
@@ -127,15 +148,22 @@ h1 {
 
 .overlay-cont {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px 30px; }
+  background-color: #eee;
+  padding: 5px 90px;
+  color: #222; }
 
 #cover {
   background-image: url("sample3.jpg");
   color: white; }
 
 #cover2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url("sample1.jpg");
-  color: white; }
+  background-size: cover;
+  color: white;
+  min-height: 80vh; }
 
 /*colour accents*/
 .hacker {
@@ -148,8 +176,7 @@ h1 {
   border-top: 10px solid #2DB5E5; }
 
 .white-section {
-  height: 500px;
-  background-color: #fff; }
+  background-color: #fff !important; }
 
 .grey-section {
   background-color: #eee; }
@@ -164,9 +191,6 @@ h1 {
 .yellow-section {
   background-color: #FFD600;
   color: white; }
-
-#test1 {
-  border: black 2px dotted; }
 
 .orange-section {
   background-color: #F37920; }

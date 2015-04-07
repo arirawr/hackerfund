@@ -33,11 +33,40 @@ section {
 
 	.tab {
 		//background-color: $dark;
-		padding: 3%;
+		width: 80px;
+		padding: 3% 0;
+		transition: width 1000ms;
 
 		.tab-title {
 			text-transform: uppercase;
 			font-weight: 700;
+			transform: rotate(-90deg);
+		}
+	}
+
+	.block {
+		width: 0;
+		transition: width 1000ms;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 15vw;
+		}
+	}
+
+	.auto-width {
+		width: 40%;
+	}
+
+	.zero-width {
+		width: 0;
+		padding: 0;
+
+		* {
+			display: none;
 		}
 	}
 
@@ -49,6 +78,8 @@ section {
 		align-items: center;
 		padding: 3%;
 		border-bottom: 1px $lightmed solid;
+  		flex: 2 1 auto;
+  		text-align: center;
 	}
 }
 
@@ -175,7 +206,9 @@ h1 {
 
 .overlay-cont {
 	background-color: rgba(0, 0, 0, 0.6);
-	padding: 20px 30px;
+	background-color: $light;
+	padding: 5px 90px;
+	color: $dark;
 }
 
 #cover {
@@ -184,8 +217,13 @@ h1 {
 }
 
 #cover2 {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background-image: url("sample1.jpg");
+	background-size: cover;
 	color: white;
+	min-height: 80vh;
 }
 
 /*colour accents*/
@@ -203,8 +241,7 @@ h1 {
 }
 
 .white-section {
-	height: 500px;
-	background-color: $white;
+	background-color: $white !important;
 }
 
 .grey-section {
@@ -223,10 +260,6 @@ h1 {
 .yellow-section {
 	background-color: $yellow;
 	color: white;
-}
-
-#test1 {
-	border: black 2px dotted;
 }
 
 .orange-section {
