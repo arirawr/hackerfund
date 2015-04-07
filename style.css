@@ -9,9 +9,17 @@ body {
   color: #222; }
 
 section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   padding: 0; }
   section .tab {
@@ -21,13 +29,20 @@ section {
     section .tab .tab-title {
       text-transform: uppercase;
       font-weight: 700;
+      -webkit-transform: rotate(-90deg);
       transform: rotate(-90deg); }
   section .block {
     width: 0;
     transition: width 1000ms;
     text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
     section .block img {
       width: 15vw; }
@@ -40,12 +55,22 @@ section {
       display: none; }
   section .content {
     background-color: #eee;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 3%;
     border-bottom: 1px #ccc solid;
+    -webkit-flex: 2 1 auto;
+    -ms-flex: 2 1 auto;
     flex: 2 1 auto;
     text-align: center; }
 
@@ -61,8 +86,14 @@ header {
 
 /*griddzzzzz*/
 .row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start; }
 
 /*buttons and shit*/
@@ -157,8 +188,14 @@ h1 {
   color: white; }
 
 #cover2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-image: url("sample1.jpg");
   background-size: cover;

@@ -24,10 +24,18 @@ body {
 }
 
 section {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: stretch;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
 	//padding: 5% 15%;
 	padding: 0;
 
@@ -40,7 +48,8 @@ section {
 		.tab-title {
 			text-transform: uppercase;
 			font-weight: 700;
-			transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+			        transform: rotate(-90deg);
 		}
 	}
 
@@ -48,9 +57,15 @@ section {
 		width: 0;
 		transition: width 1000ms;
 		text-align: center;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 
 		img {
 			width: 15vw;
@@ -72,13 +87,23 @@ section {
 
 	.content {
 		background-color: $light;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding: 3%;
 		border-bottom: 1px $lightmed solid;
-  		flex: 2 1 auto;
+  		-webkit-flex: 2 1 auto;
+  		    -ms-flex: 2 1 auto;
+  		        flex: 2 1 auto;
   		text-align: center;
 	}
 }
@@ -97,9 +122,15 @@ header {
 /*griddzzzzz*/
 
 .row {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 }
 
 /*buttons and shit*/
@@ -217,9 +248,15 @@ h1 {
 }
 
 #cover2 {
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background-image: url("sample1.jpg");
 	background-size: cover;
 	color: white;
