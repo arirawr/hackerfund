@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Lato; }
+  font-family: Lato, Helvetica Neue;
+  color: #222; }
 
 section {
   display: flex;
@@ -15,10 +16,10 @@ section {
   padding: 5% 15%; }
 
 header {
-  height: 130px;
+  height: 60px;
   border-bottom: 5px solid #3CDBC0;
   width: 100%;
-  line-height: 130px;
+  line-height: 60px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   position: fixed;
@@ -35,16 +36,18 @@ header {
   float: right;
   line-height: 20px;
   background-color: #78BE20;
-  height: 60px;
-  padding: 20px;
-  margin-top: 30px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 6px;
   width: 170px;
   text-align: center;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  cursor: pointer; }
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px #70b11e solid; }
   #donate:hover {
     background-color: #70b11e; }
   @media screen and (max-width: 700px) {
@@ -60,7 +63,9 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px #70b11e solid; }
   .btn-primary:hover {
     background-color: #70b11e; }
 
@@ -71,7 +76,7 @@ h1 {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  font-size: 3vw; }
+  font-size: 2vw; }
   @media screen and (max-width: 700px) {
     h1 {
       font-size: 5vw; } }
@@ -83,11 +88,15 @@ h1 {
     .highlight {
       font-size: 4vw; } }
 
+.body-med {
+  font-size: 2vw; }
+
 /*custom elements*/
 #logo {
   float: left;
   margin-top: 20px;
-  height: 80px; }
+  height: 80px;
+  display: none; }
 
 .infobox {
   background-color: #eee;
@@ -105,9 +114,15 @@ h1 {
 
 .overlay-cont {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px 30px;
-  height: 200px;
-  width: 300px; }
+  padding: 20px 30px; }
+
+#cover {
+  background-image: url("sample3.jpg");
+  color: white; }
+
+#cover2 {
+  background-image: url("sample1.jpg");
+  color: white; }
 
 /*colour accents*/
 .hacker {
@@ -124,7 +139,6 @@ h1 {
   background-color: #fff; }
 
 .grey-section {
-  height: 500px;
   background-color: #eee; }
 
 .aqua-section {
@@ -146,5 +160,9 @@ h1 {
 .blue-section {
   height: 500px;
   background-color: #2DB5E5; }
+
+.dark-section {
+  height: 500px;
+  background-color: #222; }
 
 /*# sourceMappingURL=style.css.map */

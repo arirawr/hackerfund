@@ -18,7 +18,8 @@ $dark: #222;
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Lato;
+	font-family: Lato, Helvetica Neue;
+	color: $dark;
 }
 
 section {
@@ -30,10 +31,10 @@ section {
 }
 
 header {
-	height: 130px;
+	height: 60px;
 	border-bottom: 5px solid $aqua;
 	width: 100%;
-	line-height: 130px;
+	line-height: 60px;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: $white;
 	position: fixed;
@@ -54,16 +55,18 @@ header {
 	float: right;
 	line-height: 20px;
 	background-color: $lime;
-	height: 60px;
-	padding: 20px;
-	margin-top: 30px;
+	height: 40px;
+	padding: 10px;
+	margin-top: 6px;
 	width: 170px;
 	text-align: center;
 	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 14px;
 	cursor: pointer;
+	border-radius: 15px;
+	border: 1px darken($lime, 3%) solid;
 
 	&:hover {
 		background-color: darken($lime, 3%);
@@ -84,6 +87,8 @@ header {
 	text-transform: uppercase;
 	font-size: 16px;
 	cursor: pointer;
+	border-radius: 15px;
+	border: 1px darken($lime, 3%) solid;
 
 	&:hover {
 		background-color: darken($lime, 3%);
@@ -98,7 +103,7 @@ h1 {
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
-	font-size: 3vw;
+	font-size: 2vw;
 
 	@media screen and (max-width: 700px) {
 		font-size: 5vw;
@@ -114,12 +119,17 @@ h1 {
 	}
 }
 
+.body-med {
+	font-size: 2vw;
+}
+
 /*custom elements*/
 
 #logo {
 	float: left;
 	margin-top: 20px;
 	height: 80px;
+	display: none;
 }
 
 .infobox {
@@ -144,8 +154,16 @@ h1 {
 .overlay-cont {
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 20px 30px;
-	height: 200px;
-	width: 300px;
+}
+
+#cover {
+	background-image: url("sample3.jpg");
+	color: white;
+}
+
+#cover2 {
+	background-image: url("sample1.jpg");
+	color: white;
 }
 
 /*colour accents*/
@@ -168,7 +186,6 @@ h1 {
 }
 
 .grey-section {
-	height: 500px;
 	background-color: $light;
 }
 
@@ -195,4 +212,9 @@ h1 {
 .blue-section {
 	height: 500px;
 	background-color: $blue;
+}
+
+.dark-section {
+	height: 500px;
+	background-color: $dark;
 }
